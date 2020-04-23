@@ -14,10 +14,9 @@ public class DbConnection
 {
 	String dbDriver = "com.mysql.jdbc.Driver";
     String dbURL = "jdbc:mysql://46.41.149.32:3306/bredcash";
-    // Database name to access 
-    String dbName = "eM5NkCyNsH"; 
+    // Database name to access
     String dbUsername = "corny"; 
-    String dbPassword = "!Korkor461"; 
+    String dbPassword = "!OQ12FDGqw12TY"; 
   //obiekt tworz¹cy po³¹czenie z baz¹ danych.
   	private Connection connection;
   	//obiekt pozwalaj¹cy tworzyæ nowe wyra¿enia SQL
