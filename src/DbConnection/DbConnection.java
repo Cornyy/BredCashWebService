@@ -13,14 +13,14 @@ import Objects.user;
 public class DbConnection 
 {
 	String dbDriver = "com.mysql.jdbc.Driver";
-    String dbURL = "jdbc:mysql://remotemysql.com:3306/eM5NkCyNsH"; 
+    String dbURL = "jdbc:mysql://46.41.149.32:3306/bredcash";
     // Database name to access 
     String dbName = "eM5NkCyNsH"; 
-    String dbUsername = "eM5NkCyNsH"; 
-    String dbPassword = "k2dHQVCr8j"; 
-  //obiekt tworz¹cy po³¹czenie z baz¹ danych.
+    String dbUsername = "corny"; 
+    String dbPassword = "!Korkor461"; 
+  //obiekt tworzÂ¹cy poÂ³Â¹czenie z bazÂ¹ danych.
   	private Connection connection;
-  	//obiekt pozwalaj¹cy tworzyæ nowe wyra¿enia SQL
+  	//obiekt pozwalajÂ¹cy tworzyÃ¦ nowe wyraÂ¿enia SQL
   	private Statement statement;
   	//zapytanie SQL
   	private String query;
@@ -31,7 +31,7 @@ public class DbConnection
 	
 		user u = null;
 		try {
-			// po³¹czenie z baz¹			
+			// poÂ³Â¹czenie z bazÂ¹			
 			Class.forName(dbDriver).newInstance();
 			connection = DriverManager.getConnection(dbURL, dbUsername, dbPassword);
 			// wykonywanie polecen sql
@@ -41,7 +41,7 @@ public class DbConnection
 			statement.execute(query);
 			ResultSet result = statement.getResultSet();
 			
-			// zapisywanie ich i wyœwietlanie
+			// zapisywanie ich i wyÅ“wietlanie
 			
 				if(result.next())
 				{
@@ -55,7 +55,7 @@ public class DbConnection
 				}			
 				
 			
-                        //zwolnienie zasobów i zamkniêcie po³¹czenia
+                        //zwolnienie zasobÃ³w i zamkniÃªcie poÂ³Â¹czenia
                         statement.close();
                         connection.close();
                         
@@ -98,7 +98,7 @@ public class DbConnection
 	{
 		user u = null;
 		try {
-			// po³¹czenie z baz¹			
+			// poÂ³Â¹czenie z bazÂ¹			
 			Class.forName(dbDriver).newInstance();
 			connection = DriverManager.getConnection(dbURL, dbUsername, dbPassword);
 			// wykonywanie polecen sql
@@ -110,7 +110,7 @@ public class DbConnection
 			statement.execute(query1);
 			ResultSet result = statement.getResultSet();
 			
-			// zapisywanie ich i wyœwietlanie
+			// zapisywanie ich i wyÅ“wietlanie
 			
 				if(result.next())
 				{
@@ -124,7 +124,7 @@ public class DbConnection
 				}			
 				
 			
-                        //zwolnienie zasobów i zamkniêcie po³¹czenia
+                        //zwolnienie zasobÃ³w i zamkniÃªcie poÂ³Â¹czenia
                         statement.close();
                         connection.close();
                         
